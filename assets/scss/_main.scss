@@ -1,0 +1,305 @@
+@import "../../element-variables";
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $--color-text-primary;
+  background-color: $--background-color-base;
+  font-size: $--font-size-base;
+  font-family:Arial, Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, SimSun, sans-serif;
+  position: relative;
+  line-height: 1.42875;
+  min-height: 100%;
+  padding-bottom: 324px;
+  overflow-x: hidden;
+}
+
+ul, h1, h2, h3, h4, h5, input, dd, dl, dt, p, ol, li, address {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+i {
+  font-style: normal;
+}
+
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+.text-blod{
+  font-weight: bold;
+}
+
+.text-primay {
+  color: $--color-primary !important;
+}
+
+.text-emphasize {
+  color: $--color-emphasize !important;
+}
+
+.text-contrast {
+  color: $--color-text-contrast !important;
+}
+
+.text-primay-hover:hover{
+  color: $--color-primary;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-muted {
+  color: $--color-text-primary;
+}
+
+.text-small {
+  font-size: 12px;
+}
+
+.clearfix {
+  zoom: 1;
+
+  &:after, &:before {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.show {
+  display: block !important;
+}
+
+.hide{
+  display: none !important;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: $--website-width;
+  margin: 0 auto;
+  position: relative;
+}
+
+.text-ligingray {
+  color: #9e9e9e;
+}
+
+.text-overflow {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+input, textarea,select{
+  background-color: #fff;
+}
+
+.box {
+  background-color: #fff;
+  > .header {
+    border-bottom: 1px solid #dedede;
+    padding: 18px 20px;
+    position: relative;
+    @extend .clearfix;
+
+    .title {
+      float: left;
+      font-size: 18px;
+      font-weight: normal;
+      color: #4a4a4a;
+    }
+  }
+
+  .actions {
+    //position: absolute;
+    //right: 20px;
+    float: right;
+    //top: 25px;
+    font-size: 14px;
+    color: $--color-primary;
+  }
+
+}
+
+// 登录
+.dialog-login {
+  width: 360px;
+}
+
+
+//.content {
+//  padding: 10px;
+//}
+
+.img-box{
+  overflow: hidden;
+}
+
+// 图文混排
+.pic-text {
+  @extend .clearfix;
+  .img-box {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .text-box {
+
+  }
+}
+
+
+/* 企业搜索无结果 */
+.no-result {
+  text-align: center;
+  padding: 80px 0;
+  background-color: #fff;
+
+  .keyword{
+    display: inline-block;
+    max-width: 100px;
+    color: $--color-primary;
+    vertical-align: middle;
+  }
+}
+
+.no-result p {
+  background: url('~assets/img/no-result.png') no-repeat left center;
+  display: inline-block;
+  height: 110px;
+  padding-left: 120px;
+  color: #6e6e6e;
+  line-height: 110px;
+  font-size: 16px;
+}
+
+/* 省略号 */
+.ellipsis {
+  color: #f64f38;
+  padding-left: 8px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+// 面包屑
+.breadcrumb {
+  .el-breadcrumb__separator {
+    color: #6e6e6e;
+    font-weight: normal;
+  }
+
+  a[href]{
+    color: $--color-primary;
+  }
+}
+
+// recomd
+.recomd-box {
+  width: 350px;
+  float: right;
+}
+
+// 索条上的分页
+.search-page {
+  line-height: 44px;
+  color: #9e9e9e;
+  padding-right: 10px;
+}
+
+.search-page i[class*=icon] {
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.search-page i[class*=icon][disabled] {
+  color: #dedede;
+  cursor: not-allowed;
+}
+
+.search-page input {
+  width: 36px;
+  height: 24px;
+  background: #fff;
+  text-align: center;
+  border: 1px solid #dedede;
+  margin-right: 3px;
+  color: #f64f38;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none !important;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+
+#content {
+  img {
+    max-width: 100%
+  }
+}
+
+// 框架指导页面
+.guide-wrap {
+  .mini-search {
+    display: none
+  }
+  .mini-search-item2{
+    position: relative !important;
+    display: block;
+  }
+  #footer {
+    position: relative !important;
+    padding: 0 !important;
+  }
+  .guide-share {
+    .drop-box {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .share-card {
+      position: relative;
+    }
+  }
+  .search-area {
+    display: inline-block;
+    border-top: 1px solid #dedede;
+    border-left: 1px solid #dedede;
+  }
+}

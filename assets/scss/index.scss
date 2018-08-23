@@ -1,0 +1,14 @@
+@import "../../element-variables.scss";
+@import '../../node_modules/element-ui/packages/theme-chalk/src/index.scss';
+
+@import './normalize';
+@import './icon';
+@import './main';
+
+// page
+@import "./page";
+
+// 覆盖element-ui
+@import "./element-ui";
+
+

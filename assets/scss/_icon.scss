@@ -1,0 +1,301 @@
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon + .icon{
+  margin-left: 10px;
+}
+
+.icon-arrow-down {
+  width: 10px;
+  height: 5px;
+  background-image: url("~assets/img/icons/arrow-down.png");
+}
+
+.icon-arrow-down-lg {
+  width: 14px;
+  height: 6px;
+  background-image: url("~assets/img/icons/arrow-down-lg.png");
+}
+
+$address: start end;
+@each $item in $address{
+  .icon-#{$item}{
+    width: 16px;
+    height:16px;
+    margin-right: 3px;
+    background-image: url("~assets/img/icons/#{$item}.png");
+  }
+}
+
+
+.icon-arrow-right{
+  @extend .icon-arrow-down;
+  transform: rotate(90deg);
+}
+
+$topIcons: doc star en;
+
+@each $var in $topIcons {
+  .icon-#{$var} {
+    width: 15px;
+    height: 15px;
+    background-image: url("~assets/img/icons/#{$var}.png");
+    margin-right: 5px;
+  }
+}
+
+.icon-jct{
+  width: 15px;
+  height: 15px;
+  background-image: url("~assets/img/icons/jct.gif");
+  margin-right: 5px;
+}
+
+.icon-maomao{
+  width: 22px;
+  height: 22px;
+  background-image: url("~assets/img/icons/maomao.png");
+}
+
+.icon-subscribe{
+  width: 24px;
+  height: 24px;
+  background-image: url("~assets/img/icons/subscribe.png");
+}
+
+.icon-phone{
+  width: 20px;
+  height: 24px;
+  background-image: url("~assets/img/icons/phone.png");
+}
+
+.icon-phone-colour{
+  width: 14px;
+  height: 14px;
+  background-image: url("~assets/img/icons/phone-colour.png");
+}
+.icon-menu{
+  width: 18px;
+  height: 8px;
+  background-image: url("~assets/img/icons/menu.png");
+}
+
+.icon-plus{
+  width: 10px;
+  height:10px;
+  background-image: url("~assets/img/icons/plus.png");
+}
+
+.icon-location{
+  width: 12px;
+  height: 14px;
+  background-image: url("~assets/img/icons/location.png");
+}
+
+.icon-menu-colour{
+  width: 18px;
+  height: 8px;
+  background-image: url("~assets/img/icons/menu-colour.png");
+}
+
+.icon-arrow-up-lg{
+  width:16px;
+  height: 10px;
+  background-image: url("~assets/img/icons/arrow-up-lg.png");
+}
+
+.icon-user{
+  width: 15px;
+  height: 15px;
+  background-image: url("~assets/img/icons/user.png");
+}
+
+
+.icon-drop {
+  width: 14px;
+  height: 20px;
+  background-image: url("~assets/img/icons/drop.png");
+}
+
+.icon-sort{
+  width: 10px;
+  height: 14px;
+  background-image: url("~assets/img/icons/sort.png");
+}
+
+.icon-sort-desc{
+  background-image: url("~assets/img/icons/sort-desc.png");
+}
+
+.icon-sort-asc{
+  background-image: url("~assets/img/icons/sort-asc.png");
+}
+
+.icon-grid{
+  width: 12px;
+  height: 12px;
+  background-image: url("~assets/img/icons/grid.png");
+}
+
+.icon-grid-colour{
+  width: 12px;
+  height: 12px;
+  background-image: url("~assets/img/icons/grid-colour.png");
+}
+
+.icon-auth{
+  width: 18px;
+  height: 18px;
+  background-image: url("~assets/img/icons/auth.png");
+}
+
+.icon-bulb{
+  width: 42px;
+  height: 42px;
+  background-image: url("~assets/img/icons/bulb.png");
+}
+
+.icon-menu2{
+  width: 12px;
+  height: 12px;
+  background-image: url("~assets/img/icons/menu2.png");
+}
+
+.icon-menu2-colour{
+  width: 12px;
+  height: 12px;
+  background-image: url("~assets/img/icons/menu2-colour.png");
+}
+
+.icon-rise {
+  width: 14px;
+  height: 20px;
+  background-image: url("~assets/img/icons/rise.png");
+}
+.icon-flat{
+  width: 14px;
+  height: 20px;
+  background-image: url("~assets/img/icons/flat.png");
+}
+
+.icon-arrow-line{
+  width: 18px;
+  height: 12px;
+  background-image: url("~assets/img/icons/arrow-right.png");
+}
+
+.icon-target{
+  width: 16px;
+  height: 16px;
+  background-image: url("~assets/img/icons/target.png");
+}
+
+.icon-lock{
+  width:15px;
+  height:19px;
+  background-image: url("~assets/img/icons/lock.png");
+}
+
+.icon-zoom{
+  background: url("~assets/img/icons/zoom.png") center no-repeat #ccc;
+}
+.icon-qbz{
+  width:16px;
+  height:17px;
+  background-image: url("~assets/img/icons/qbz.png");
+}
+.icon-hook{
+  width: 14px;
+  height: 10px;
+  background-image: url("~assets/img/icons/hook.png");
+}
+
+.icon-global{
+  width: 16px;
+  height: 16px;
+  background-image: url("~assets/img/icons/global.png");
+}
+
+.icon-vip2{
+  width: 16px;
+  height: 16px;
+  background-image: url("~assets/img/icons/vip2.png");
+}
+
+.icon-vip3{
+  width: 16px;
+  height: 16px;
+  background-image: url("~assets/img/icons/vip3.png");
+}
+
+// 首页标题ICON
+$indexBoxIcon: index hot purchase car dollar book;
+
+@each $var in $indexBoxIcon {
+  .icon-#{$var} {
+    width: 24px;
+    height:24px;
+    background-image: url("~assets/img/icons/#{$var}.png");
+  }
+}
+
+.icon-more{
+  width: 16px;
+  height: 16px;
+  background-image: url("~assets/img/icons/more.png");
+}
+
+.icon-more-primary{
+  width: 16px;
+  height: 16px;
+  background-image: url("~assets/img/icons/more-primary.png");
+}
+
+.icon-more-refresh{
+  width: 16px;
+  height: 16px;
+  background: url("~assets/img/icons/changeing.png") center 1px no-repeat;
+}
+
+// 分享icons
+$shareIcon: copy qq wechat weibo qzone;
+
+.icon-share{
+  width: 17px;
+  height: 17px;
+  background-image: url("~assets/img/icons/share.png");
+}
+
+@each $var in $shareIcon {
+  .icon-#{$var} {
+    width: 20px;
+    height: 20px;
+    background: url("~assets/img/icons/#{$var}-colour.png") no-repeat center;
+
+    // &:hover{
+    //   background-image: url("~assets/img/icons/#{$var}-colour.png");
+    // }
+  }
+}
+
+
+// 首页菜单分类icon
+@for $i from 1 to 10 {
+  .icon-cate#{$i}-colour {
+    width: 32px;
+    height: 25px;
+    background: url("~assets/img/icons/cate#{$i}-colour.png") no-repeat center;
+  }
+
+  .icon-cate#{$i}{
+    width: 32px;
+    height: 25px;
+    background: url("~assets/img/icons/cate#{$i}.png") no-repeat center;
+  }
+}

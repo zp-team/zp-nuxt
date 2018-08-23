@@ -1,0 +1,54 @@
+@import "../../element-variables";
+
+/* 分页 */
+.pagination {
+  text-align: center;
+  padding-top: 40px;
+  font-weight: normal;
+}
+
+.pagination .btn-prev, .el-pager li, .pagination .btn-next {
+  width: 34px;
+  line-height: 34px;
+  height: 34px;
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  margin: 0 5px;
+}
+
+.el-pager li.more {
+  border: none;
+  margin: 0 -5px;
+}
+
+.el-pager li.active{
+  background-color: $--color-primary;
+  border-color: $--color-primary;
+  color: #fff;
+}
+
+.el-pager li.active + li{
+  border-left: 1px solid #dedede;
+}
+
+
+.el-pager li.more:hover {
+  background-color: transparent;
+}
+
+.el-pagination__editor {
+  width: 45px;
+  height: 34px;
+}
+
+.el-pagination .btn-prev{
+  padding-right: 4px;
+}
+.el-pagination .btn-next{
+  padding-left: 4px;
+}
+
+.el-pagination__jump{
+  margin-top: 5px;
+}
+
