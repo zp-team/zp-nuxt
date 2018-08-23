@@ -16,3 +16,6 @@ build
 
 # Webstorm
 .idea
+
+# vscode
+.vscode
