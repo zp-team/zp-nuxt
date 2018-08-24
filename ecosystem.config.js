@@ -7,7 +7,7 @@ module.exports = {
 
 		// First application
 		{
-			name: 'SP',
+			name: 'ZP',
 			script: './build/main.js',
 			exec_mode: 'cluster',
 			instances: 'max',
@@ -17,12 +17,12 @@ module.exports = {
 				NODE_ENV: 'development'
 			},
 			env_test: {
-				PORT: 3014,
+				PORT: 3000,
 				NODE_CONFIG: 'test',
 				NODE_ENV: 'production'
 			},
 			env_pre: {
-				PORT: 3014,
+				PORT: 3000,
 				NODE_CONFIG: 'pre',
 				NODE_ENV: 'production'
 			},

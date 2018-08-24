@@ -1,21 +1,13 @@
 import Vue from 'vue'
-import imgCdn from './imgCdn'
-import timeFlier from './timeFlier'
-import cutStr from './cutStr'
-import getArrIndex from './getArrIndex'
-import unit from './unit'
-import htmlTag from './htmlTag'
+import moment from './moment'
+import cutstr from './cutstr'
 
 const filters = {
-	imgCdn,
-	timeFlier,
-	unit,
-	htmlTag,
-	getArrIndex,
-	cutStr
+	moment,
+	cutstr
 }
 
-// 注册filters到Vue
+// 注册过滤器
 for (let key in filters) {
 	Vue.filter(key, filters[key])
 }

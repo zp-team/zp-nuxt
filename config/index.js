@@ -6,31 +6,21 @@
 const NODE_ENV = {
 	dev: {
 		// CDN 服务器
-
-		CDN_ADDRESS: 'http://127.0.0.1:8089/',
-
+		CDN_ADDRESS: '/_nuxt/',
 		// API 服务器
-		// 周玉强
-		// SERVER_ADDRESS: 'http://192.168.23.136:7095',
-
-		// 于晨
-		SERVER_ADDRESS: 'http://api.jumoreys.com.pre', // 'http://api.jumoreys.test', http://api.jumoreys.test
-
+		SERVER_ADDRESS: 'http://api.jumoreys.com.pre', 
 		// 认证中心
-		USERCENTER_ADDRESS: 'https://passport.jumore.test', // https://passport.jumore.test http://uc3.dev.com
-
+		USERCENTER_ADDRESS: 'https://passport.jumore.test', 
 		// 中台地址
 		CENTER_ADDRESS: 'https://ecenter.jumore.test',
-
 		// 图片服务器
 		IMG_ADDRESS: 'https://img.jumore.com.pre',
-
 		// 图片上传服务器
 		UPLOAD_ADDRESS: 'http://image5.jm.com'
 	},
 	test: {
 		// CDN 服务器
-		CDN_ADDRESS: 'https://www.jumoresp.test/_gull/',
+		CDN_ADDRESS: '/_nuxt/',
 		// API 服务器
 		SERVER_ADDRESS: 'http://api.jumoreys.test',
 		// 认证中心

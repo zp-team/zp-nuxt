@@ -17,8 +17,8 @@ const user = {
 	actions: {
 		/**
 		 * 初始化数据
-		 * @param {commit}  更新状态
-		 * @param {app}  异步请求数据 
+		 * @param {function} commit  更新状态
+		 * @param {object} app  异步请求数据 
 		 */
 		async nuxtServerInit ({ commit }, { app }) {
 			// todo...
@@ -26,7 +26,7 @@ const user = {
 
 		/**
 		 * 页面通过Store获取用户数据
-		 * @param {commit} 更新状态 
+		 * @param {function} commit  更新状态
 		 */
 		getAction ({commit}) {
 			return new Promise((resolve, reject) => {

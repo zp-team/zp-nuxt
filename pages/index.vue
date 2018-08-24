@@ -1,6 +1,8 @@
 <template>
 	<section class="guide-wrap">
-			GULL
+			test
+      {{'125454878787'|moment('YYYY-MM-DD')}}
+      {{'125454878787'|cutstr(5)}}
 	</section>
 </template>
 

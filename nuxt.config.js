@@ -59,9 +59,8 @@ module.exports = {
 
 	/*
    ** Global CSS '~/node_modules/element-ui/lib/theme-default/index.css',
-   * ~/theme/index.css
    */
-	css: ['~/assets/scss/index.scss', '~plugins/swiper/swiper.css'],
+	css: ['~/assets/scss/index.scss'],
 	/*
    ** Add axios globally
    */
