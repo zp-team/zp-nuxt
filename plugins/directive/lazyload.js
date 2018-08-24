@@ -1,8 +1,8 @@
 /**
  * 定义图片加载监听事件
- * @param  {[type]} ele     [description]
- * @param  {[type]} binding [description]
- * @return {[type]}         [description]
+ * 
+ * @param  {[type]} ele     需要绑定的对象
+ * @param  {[type]} binding 绑定的值
  */
 
 import config from '~/config'
