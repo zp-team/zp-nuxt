@@ -1,6 +1,6 @@
 /**
  * 日期格式化
- * 使用方法：{{ val |　moment('YYYY-MM-DD hh:mm:ss') }}
+ * 使用方法：{{val | moment('YYYY-MM-DD hh:mm:ss')}}
  * 如需更多功能的时间库，请移步《http://momentjs.cn/》
  * @param {number, string} val  时间戳或者其它时间格式
  * @param {string} fmt  格式类型 
@@ -14,8 +14,8 @@ const moment = (val, fmt) => {
 	} else if (typeof val === 'number') {
 		date = new Date(val)
 	} else if (typeof val == 'string') {
-		date = val.indexOf('-') > -1 ? new Date(val.replace(/-/g, '/')) :  new Date(parseInt(val, 10))
-	} else if(typeof date === 'object' && typeof date.getDate !== 'function') {
+		date = val.indexOf('-') > -1 ? new Date(val.replace(/-/g, '/')) : new Date(parseInt(val, 10))
+	} else if (typeof date === 'object' && typeof date.getDate !== 'function') {
 		date = val
 	} else {
 		return val

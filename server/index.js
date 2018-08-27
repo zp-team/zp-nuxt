@@ -19,7 +19,7 @@ if (process.env.NODE_CONFIG === 'dev') {
 
 app.use(async (ctx, next) => {
 	await next()
-	ctx.status = 200 
+	ctx.status = 200
 	return new Promise((resolve, reject) => {
 		ctx.res.on('close', resolve)
 		ctx.res.on('finish', resolve)

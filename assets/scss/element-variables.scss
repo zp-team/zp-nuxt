@@ -1,7 +1,6 @@
-/* Element Chalk Variables */
+// Element Chalk Variables
 
-/* Transition
--------------------------- */
+// Transition
 $--all-transition: all .3s cubic-bezier(.645,.045,.355,1);
 $--fade-transition: opacity 300ms cubic-bezier(0.23, 1, 0.32, 1);
 $--fade-linear-transition: opacity 200ms linear;
@@ -9,21 +8,21 @@ $--md-fade-transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opa
 $--border-transition-base: border-color .2s cubic-bezier(.645,.045,.355,1);
 $--color-transition-base: color .2s cubic-bezier(.645,.045,.355,1);
 
-/* Colors
--------------------------- */
+// Colors
 $--color-white: #fff;
 $--color-black: #000;
-/*主色调*/
-$--color-primary: #7bba00 !default;
-$--color-primary-light-1: mix($--color-white, $--color-primary, 10%); /* 53a8ff */
-$--color-primary-light-2: mix($--color-white, $--color-primary, 20%); /* 66b1ff */
-$--color-primary-light-3: mix($--color-white, $--color-primary, 30%); /* 79bbff */
-$--color-primary-light-4: mix($--color-white, $--color-primary, 40%); /* 8cc5ff */
-$--color-primary-light-5: mix($--color-white, $--color-primary, 50%); /* a0cfff */
-$--color-primary-light-6: mix($--color-white, $--color-primary, 60%); /* b3d8ff */
-$--color-primary-light-7: mix($--color-white, $--color-primary, 70%); /* c6e2ff */
-$--color-primary-light-8: mix($--color-white, $--color-primary, 80%); /* d9ecff */
-$--color-primary-light-9: mix($--color-white, $--color-primary, 90%); /* ecf5ff */
+
+// Primary Color
+$--color-primary: #7bba00 !default; 
+$--color-primary-light-1: mix($--color-white, $--color-primary, 10%); // 53a8ff 
+$--color-primary-light-2: mix($--color-white, $--color-primary, 20%); // 66b1ff 
+$--color-primary-light-3: mix($--color-white, $--color-primary, 30%); // 79bbff
+$--color-primary-light-4: mix($--color-white, $--color-primary, 40%); // 8cc5ff
+$--color-primary-light-5: mix($--color-white, $--color-primary, 50%); // a0cfff
+$--color-primary-light-6: mix($--color-white, $--color-primary, 60%); // b3d8ff
+$--color-primary-light-7: mix($--color-white, $--color-primary, 70%); // c6e2ff 
+$--color-primary-light-8: mix($--color-white, $--color-primary, 80%); // d9ecff
+$--color-primary-light-9: mix($--color-white, $--color-primary, 90%); // ecf5ff
 
 $--color-success: #67c23a !default;
 $--color-warning: #eb9e05 !default;
@@ -47,22 +46,18 @@ $--color-text-regular: #5a5e66 !default;
 $--color-text-secondary: #6e6e6e !default;
 $--color-text-placeholder: #b4bccc !default;
 
-/* Layout
----------------------------*/
+// Layout
 $--website-width: 1190px;
 
-/* Link
--------------------------- */
+// Link
 $--link-color: $--color-primary-light-2;
 $--link-hover-color: $--color-primary;
 
-/* Background
--------------------------- */
-/*$--background-color-base: #f5f5f5;*/
+// Background
+//$--background-color-base: #f5f5f5;
 $--background-color-base: #fff;
 
-/* Border
--------------------------- */
+// Border
 $--border-width-base: 1px;
 $--border-style-base: solid;
 $--border-color-base: #d8dce5 !default;
@@ -75,19 +70,15 @@ $--border-radius-base: 4px;
 $--border-radius-small: 2px;
 $--border-radius-circle: 100%;
 
-/* Box-shadow
--------------------------- */
+// Box-shadow
 $--box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
 $--box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
 $--box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
 
-/* Fill
--------------------------- */
+// Fill
 $--fill-base: $--color-white;
 
-/* Font
--------------------------- */
-//$--font-path: 'fonts' !default;
+// Font
 $--font-size-base: 14px;
 $--font-size-small: 13px;
 $--font-size-large: 18px;
@@ -95,29 +86,24 @@ $--font-color-disabled-base: #bbb;
 $--font-weight-primary: 500;
 $--font-line-height-primary: 24px;
 
-/* Size
--------------------------- */
+// Size
 $--size-base: 14px;
 
-/* z-index
--------------------------- */
+// z-index
 $--index-normal: 1;
 $--index-top: 1000;
 $--index-popper: 2000;
 
-/* Disable base
--------------------------- */
+// Disable base
 $--disabled-fill-base: $--background-color-base;
 $--disabled-color-base: $--color-text-placeholder;
 $--disabled-border-base: $--border-color-light;
 
-/* Icon
--------------------------- */
+// Icon
 $--icon-color: #666;
 $--icon-color-base: $--color-info;
 
-/* Checkbox
--------------------------- */
+// Checkbox
 $--checkbox-font-size: 14px;
 $--checkbox-font-weight: $--font-weight-primary;
 $--checkbox-color: $--color-text-regular;
@@ -162,8 +148,7 @@ $--checkbox-button-checked-border-color: $--color-primary;
 
 
 
-/* Radio
--------------------------- */
+// Radio
 $--radio-font-size: 14px;
 $--radio-font-weight: $--font-weight-primary;
 $--radio-color: $--color-text-regular;
@@ -207,8 +192,7 @@ $--radio-button-checked-color: $--color-white;
 $--radio-button-checked-border-color: $--color-primary;
 $--radio-button-disabled-checked-fill: $--border-color-extra-light;
 
-/* Select
--------------------------- */
+// Select
 $--select-border-color-hover: $--border-color-hover;
 $--select-disabled-border: $--disabled-border-base;
 $--select-font-size: $--font-size-base;
@@ -243,8 +227,7 @@ $--select-dropdown-padding: 6px 0;
 $--select-dropdown-empty-padding: 10px 0;
 $--select-dropdown-border: solid 1px $--border-color-light;
 
-/* Alert
--------------------------- */
+// Alert
 $--alert-padding: 8px 16px;
 $--alert-border-radius: $--border-radius-base;
 $--alert-title-font-size: 13px;
@@ -260,8 +243,7 @@ $--alert-danger-color: $--color-danger-lighter;
 $--alert-icon-size: 16px;
 $--alert-icon-large-size: 28px;
 
-/* Message Box
--------------------------- */
+// Message Box
 $--msgbox-width: 420px;
 $--msgbox-border-radius: 4px;
 $--msgbox-font-size: $--font-size-large;
@@ -275,8 +257,7 @@ $--msgbox-info-color: $--color-info;
 $--msgbox-warning-color: $--color-warning;
 $--msgbox-danger-color: $--color-danger;
 
-/* Message
--------------------------- */
+// Message
 $--message-shadow: $--box-shadow-base;
 $--message-min-width: 380px;
 $--message-background-color: #edf2fc;
@@ -291,8 +272,7 @@ $--message-info-color: $--color-info;
 $--message-warning-color: $--color-warning;
 $--message-danger-color: $--color-danger;
 
-/* Notification
--------------------------- */
+// Notification
 $--notification-width: 330px;
 $--notification-padding: 14px 26px 14px 13px;
 $--notification-raduis: 8px;
@@ -314,8 +294,7 @@ $--notification-info-color: $--color-info;
 $--notification-warning-color: $--color-warning;
 $--notification-danger-color: $--color-danger;
 
-/* Input
--------------------------- */
+// Input
 $--input-font-size: $--font-size-base;
 $--input-color: $--color-text-regular;
 $--input-width: 140px;
@@ -350,8 +329,7 @@ $--input-small-height: 32px;
 $--input-mini-font-size: 12px;
 $--input-mini-height: 28px;
 
-/* Cascader
--------------------------- */
+// Cascader
 $--cascader-menu-fill: $--fill-base;
 $--cascader-menu-font-size: $--font-size-base;
 $--cascader-menu-radius: $--border-radius-base;
@@ -371,8 +349,7 @@ $--cascader-menu-shadow: 0 1px 2px rgba($--color-black, 0.14), 0 0 3px rgba($--c
 $--cascader-menu-option-pinyin-color: #999;
 $--cascader-menu-submenu-shadow: 1px 1px 2px rgba($--color-black, 0.14), 1px 0 2px rgba($--color-black, 0.14);
 
-/* Group
--------------------------- */
+// Group
 $--group-option-flex: 0 0 (1/5) * 100%;
 $--group-option-offset-bottom: 12px;
 $--group-option-fill-hover: rgba($--color-black, 0.06);
@@ -380,8 +357,7 @@ $--group-title-color: $--color-black;
 $--group-title-font-size: $--font-size-base;
 $--group-title-width: 66px;
 
-/* Tab
--------------------------- */
+// Tab
 $--tab-font-size: $--font-size-base;
 $--tab-border-line: 1px solid #e4e4e4;
 $--tab-header-color-active: $--color-text-secondary;
@@ -393,8 +369,7 @@ $--tab-vertical-header-width: 90px;
 $--tab-vertical-header-count-color: $--color-white;
 $--tab-vertical-header-count-fill: $--color-text-secondary;
 
-/* Button
--------------------------- */
+// Button
 $--button-font-size: 14px;
 $--button-font-weight: $--font-weight-primary;
 $--button-border-radius: $--border-radius-base;
@@ -448,12 +423,10 @@ $--button-hover-tint-percent: 20%;
 $--button-active-shade-percent: 10%;
 
 
-/* cascader
--------------------------- */
+// cascader
 $--cascader-height: 200px;
 
-/* Switch
--------------------------- */
+// Switch
 $--switch-on-color: $--color-primary;
 $--switch-off-color: $--border-color-base;
 $--switch-disabled-color: $--border-color-lighter;
@@ -465,8 +438,7 @@ $--switch-width: 40px;
 $--switch-height: 20px;
 $--switch-button-size: 16px;
 
-/* Dialog
--------------------------- */
+// Dialog
 $--dialog-background-color: $--color-primary-light-4;
 $--dialog-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 $--dialog-close-hover-color: $--color-primary;
@@ -475,8 +447,7 @@ $--dialog-font-size: 14px;
 $--dialog-line-height: $--font-line-height-primary;
 $--dialog-padding-primary: 15px;
 
-/* Table
--------------------------- */
+// Table
 $--table-border:  1px solid $--border-color-lighter;
 $--table-text-color: $--color-text-regular;
 $--table-header-color: $--color-text-secondary;
@@ -486,8 +457,7 @@ $--table-header-background: $--color-text-secondary;
 $--table-footer-background: $--color-text-placeholder;
 $--table-fixed-box-shadow: 0 0 10px rgba(0, 0, 0, .12);
 
-/* Pagination
--------------------------- */
+// Pagination
 $--pagination-font-size: 13px;
 $--pagination-fill: $--color-white;
 $--pagination-color: $--color-text-primary;
@@ -500,8 +470,7 @@ $--pagination-button-disabled-fill: $--color-white;
 $--pagination-hover-fill: $--color-primary;
 $--pagination-hover-color: $--color-white;
 
-/* Popover
--------------------------- */
+// Popover
 $--popover-fill: $--color-white;
 $--popover-font-size: $--font-size-base;
 $--popover-border-color: $--border-color-lighter;
@@ -511,8 +480,7 @@ $--popover-padding-large: 18px 20px;
 $--popover-title-font-size: 16px;
 $--popover-title-color: $--color-text-primary;
 
-/* Tooltip
--------------------------- */
+// Tooltip
 $--tooltip-fill: #fff; //$--color-text-primary;
 $--tooltip-color: #9e9e9e;//$--color-white;
 $--tooltip-font-size: 12px;
@@ -520,8 +488,7 @@ $--tooltip-border-color: #9e9e9e;//$--color-text-primary;
 $--tooltip-arrow-size: 6px;
 $--tooltip-padding: 10px;
 
-/* Tag
--------------------------- */
+// Tag
 $--tag-padding: 0 10px;
 $--tag-fill: rgba($--color-primary, 0.10);
 $--tag-color: $--color-primary;
@@ -549,34 +516,29 @@ $--tag-danger-fill: rgba($--color-danger, 0.10);
 $--tag-danger-border: rgba($--color-danger, 0.20);
 $--tag-danger-color: $--color-danger;
 
-/* Tree
--------------------------- */
+// Tree
 $--tree-node-hover-color: $--background-color-base;
 $--tree-text-color: $--color-text-regular;
 $--tree-expand-icon-color: $--color-text-placeholder;
 
-/* Dropdown
--------------------------- */
+// Dropdown
 $--dropdown-menu-box-shadow: $--box-shadow-light;
 $--dropdown-menuItem-hover-fill: $--color-primary-light-9;
 $--dropdown-menuItem-hover-color: $--link-color;
 
-/* Badge
--------------------------- */
+// Badge
 $--badge-fill: $--color-danger;
 $--badge-radius: 10px;
 $--badge-font-size: 12px;
 $--badge-padding: 6px;
 $--badge-size: 18px;
 
-/* Card
---------------------------*/
+// Card
 $--card-border-color: $--border-color-lighter;
 $--card-border-radius: 4px;
 $--card-padding: 20px;
 
-/* Slider
---------------------------*/
+// Slider
 $--slider-main-background-color: $--color-primary;
 $--slider-runway-background-color: $--border-color-light;
 $--slider-button-hover-color: mix($--color-primary, black, 97%);
@@ -590,28 +552,24 @@ $--slider-button-size: 16px;
 $--slider-button-wrapper-size: 36px;
 $--slider-button-wrapper-offset: -15px;
 
-/* Steps
---------------------------*/
+// Steps
 $--steps-border-color: $--disabled-border-base;
 $--steps-border-radius: 4px;
 $--steps-padding: 20px;
 
-/* Menu
---------------------------*/
+// Menu
 $--menu-item-color: $--color-text-primary;
 $--menu-item-fill: $--color-white;
 $--menu-item-hover-fill: $--color-primary-light-9;
 
-/* Rate
---------------------------*/
+// Rate
 $--rate-height: 20px;
 $--rate-font-size: $--font-size-base;
 $--rate-icon-size: 18px;
 $--rate-icon-margin: 6px;
 $--rate-icon-color: $--color-text-placeholder;
 
-/* DatePicker
---------------------------*/
+// DatePicker
 $--datepicker-color: $--color-text-regular;
 $--datepicker-off-color: $--color-text-placeholder;
 $--datepicker-header-color: $--color-text-regular;
@@ -624,18 +582,15 @@ $--datepicker-active-color: $--color-primary;
 $--datepicker-text-hover-color: $--color-primary;
 $--datepicker-cell-hover-color: #fff;
 
-/* Loading
---------------------------*/
+// Loading
 $--loading-spinner-size: 42px;
 $--loading-fullscreen-spinner-size: 50px;
 
-/* Scrollbar
---------------------------*/
+// Scrollbar
 $--scrollbar-background-color: rgba($--color-text-secondary, .3);
 $--scrollbar-hover-background-color: rgba($--color-text-secondary, .5);
 
-/* Carousel
---------------------------*/
+// Carousel
 $--carousel-arrow-font-size: 12px;
 $--carousel-arrow-size: 36px;
 $--carousel-arrow-background: rgba(31, 45, 61, 0.11);
@@ -646,8 +601,7 @@ $--carousel-indicator-padding-horizontal: 4px;
 $--carousel-indicator-padding-vertical: 12px;
 $--carousel-indicator-out-color: $--border-color-hover;
 
-/* Collapse
---------------------------*/
+// Collapse
 $--collapse-border-color: $--border-color-lighter;
 $--collapse-header-height: 48px;
 $--collapse-header-padding: 20px;
@@ -658,8 +612,7 @@ $--collapse-content-fill: $--color-white;
 $--collapse-content-size: 13px;
 $--collapse-content-color: $--color-text-primary;
 
-/* Transfer
---------------------------*/
+// Transfer
 $--transfer-border-color: $--border-color-lighter;
 $--transfer-border-radius: $--border-radius-base;
 $--transfer-panel-width: 200px;
@@ -671,20 +624,16 @@ $--transfer-item-height: 30px;
 $--transfer-item-hover-background: $--color-text-secondary;
 $--transfer-filter-height: 32px;
 
-/* Header
-  --------------------------*/
+// Header
 $--header-padding: 0 20px;
 
-/* Footer
---------------------------*/
+// Footer
 $--footer-padding: 0 20px;
 
-/* Main
---------------------------*/
+// Main
 $--main-padding: 20px;
 
-/* Break-point
---------------------------*/
+// Break-point
 $--sm: 768px !default;
 $--md: 992px !default;;
 $--lg: 1200px !default;;

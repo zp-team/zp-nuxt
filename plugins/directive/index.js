@@ -2,7 +2,7 @@ import Vue from 'vue'
 import lazyload from './lazyload'
 
 const directives = {
-	lazyload,
+	lazyload
 }
 
 // 注册指定

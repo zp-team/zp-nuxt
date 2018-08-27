@@ -6,10 +6,9 @@ module.exports = {
 	},
 	// 设置缓存
 	cache: {
-	  max: 1000,       // 组件缓存数
-	  maxAge: 900000   // 15分钟
+		max: 1000, // 组件缓存数
+		maxAge: 900000 // 15分钟
 	},
-	cache: true,
 	transition: 'page',
 	/*
    ** Headers of the page
@@ -70,14 +69,14 @@ module.exports = {
 		'~plugins/filter/',
 		'~plugins/directive/'
 	],
-  axios: {
-    retry: { retries: 3 },
-    browserBaseURL: '',
-    proxy: true,
-    headers: {
-      post: {'Content-Type': 'application/json'} // 设置请求头
-    }
-  },
+	axios: {
+		retry: { retries: 3 },
+		browserBaseURL: '',
+		proxy: true,
+		headers: {
+			post: {'Content-Type': 'application/json'} // 设置请求头
+		}
+	},
 	build: {
 		filenames: {
 			css: 'styles.[chunkhash].css'
