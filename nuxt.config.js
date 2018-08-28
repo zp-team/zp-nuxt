@@ -79,12 +79,18 @@ module.exports = {
 	},
 	build: {
 		filenames: {
-			css: 'styles.[chunkhash].css'
+			css: 'styles.[chunkhash].css',
+			app: '[name].[chunkhash].js'
 		},
 		extractCSS: {
 			allChunks: true
 		},
-		vendor: ['babel-polyfill', 'eventsource-polyfill', 'axios', 'element-ui'],
+		vendor: [
+			'babel-polyfill',
+			'eventsource-polyfill',
+			'axios',
+			'element-ui'
+		],
 		babel: {
 			plugins: [
 				['component', [{
@@ -100,7 +106,18 @@ module.exports = {
 			})
 		],
 		publicPath: address.CDN_ADDRESS,
-		extend (config) {
+		extend (config, { isClient }) {
+			if (isClient) {
+				const { vendor } = config.entry
+				const vendor2 = ['axios', 'element-ui']
+				config.entry.vendor = vendor.filter(v => !vendor2.includes(v))
+				config.entry.vendor2 = vendor2
+				const plugin = config.plugins.find((plugin) => ~plugin.chunkNames.indexOf('vendor'))
+				const old = plugin.minChunks
+				plugin.minChunks = function (module, count) {
+					return old(module, count) && !(/(axios)|(element-ui)/).test(module.context)
+				}
+			}
 		}
 	},
 	/*

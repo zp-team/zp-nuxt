@@ -5,9 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_CONFIG=dev backpack dev",
-    "build:test": "cross-env NODE_CONFIG=test nuxt build && backpack build",
-    "build:pre": "cross-env NODE_CONFIG=pre nuxt build && backpack build",
-    "build:prod": "cross-env NODE_CONFIG=prod nuxt build && backpack build",
+    "build:test": "cross-env NODE_CONFIG=test nuxt build",
+    "build:pre": "cross-env NODE_CONFIG=pre nuxt build",
+    "build:prod": "cross-env NODE_CONFIG=prod nuxt build",
     "start:test": "cross-env NODE_CONFIG=test NODE_ENV=production node build/main.js",
     "start:pre": "cross-env NODE_CONFIG=pre NODE_ENV=production node build/main.js",
     "start:prod": "cross-env NODE_CONFIG=prod NODE_ENV=production node build/main.js",

@@ -1,0 +1,30 @@
+.dialog-login {
+  .el-form {
+    padding: 0 40px;
+  }  
+  .title {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #3e3e3e;
+  }
+  .error-msg {
+    margin: -10px 0 10px 0;
+    padding: 0 40px;
+    color: #d32f2f
+  }
+  .login-btn {
+    width: 100%;
+  }
+  .dialog-footer {
+    .login-register {
+      height: 55px;
+      line-height: 52px;
+      text-align: center;
+      border-top: 1px solid #e5e5e5;
+      margin-top: 30px;
+    }
+    a {
+      color: #2789e9;
+    }
+  }
+}

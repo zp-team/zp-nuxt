@@ -1,5 +1,6 @@
 const user = {
 	state: {
+		dialogState: false,
 		user: {},
 		userStatus: {}
 	},
@@ -11,6 +12,10 @@ const user = {
 
 		SET_USERSTATUS (state, payload) {
 			state.userStatus = payload
+		},
+
+		SET_DIALOGSTATUS (state, payload) {
+			state.dialogState = payload
 		}
 	},
 
