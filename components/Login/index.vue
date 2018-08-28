@@ -5,11 +5,11 @@
 
       <el-form :model="form" ref="form" :rules="rules">
         <el-form-item prop="username">
-          <el-input v-model="form.username" auto-complete="off" :autofocus="true" placeholder="请输入手机号/邮箱"></el-input>
+          <el-input v-model="form.username" auto-complete="off" prefix-icon="el-icon-search" :autofocus="true" placeholder="请输入手机号/邮箱"></el-input>
         </el-form-item>
 
         <el-form-item prop="password">
-          <el-input type="password" v-model="form.password" auto-complete="off" placeholder="请输入密码"></el-input>
+          <el-input type="password" v-model="form.password"  auto-complete="off" prefix-icon="el-icon-search" placeholder="请输入密码"></el-input>
         </el-form-item>
 
         <div class="jm-modal-pwd-operate clearfix">
@@ -17,7 +17,7 @@
           <a class="jm-modal-login-forget" :href="`XXX`" target="_blank">忘记密码</a>
         </div>
 
-        <el-button :disabled="loading" class="login-btn" type="primary" @click="login('form')">登 录</el-button>
+        <el-button :disabled="loading" :loading="loading" class="login-btn" type="primary" @click="login('form')">登 录</el-button>
       </el-form>
 
       <div class="dialog-footer">
@@ -36,7 +36,7 @@ export default {
   data() {
     return {
       loading: false,
-      errorMsg: '',
+      errorMsg: '11',
       form: {
           username: '',
           password: '',
