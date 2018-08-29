@@ -33,10 +33,9 @@ export default ({ $axios, redirect, app, store }) => {
 	$axios.onRequest((config) => {
 		// node环境中添加baseURL和替换proxy配置
 		if (process.server) {
-			config.baseURL = address.SERVER_ADDRESS + `/api/1014`
-		} else {
-			config.baseURL = `/api/1014`
+			config.baseURL = address.SERVER_ADDRESS
 		}
+
 		// 解决GET请求缓存
 		if (config.method === 'get') {
 			config.params = Object.assign({t: +new Date()}, config.params)
@@ -53,10 +52,10 @@ export default ({ $axios, redirect, app, store }) => {
 			console.log(`\x1B[32m=====================> 响应开始 url:%s================\x1B[39m`, response.config.url)
 			return response
 		} else {
-			if (res.code == 0) {
+			if (res.status == 1) {
 				// 成功返回
 				return response
-			} else if (res.code == 401 || res.code == 403) {
+			} else if (res.status == 401 || res.status == 403) {
 				// 未授权重定向至登录页
 				return redirect(address.USERCENTER_ADDRESS + '/login')
 			} else {

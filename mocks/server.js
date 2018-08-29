@@ -16,9 +16,11 @@ app.use(async (ctx, next) => {
 	return new Promise((resolve, reject) => {
 		ctx.req.addListener('data', resolve)
 		ctx.req.addListener('end', () => {
+			const _url = ctx.req.url.indexOf('?') > 0 ? ctx.req.url.split('?')[0] : ctx.req.url
 			console.log('url=>', ctx.req.url)
-			const data = _map[ctx.req.url]
-				? Mock.mock(_map[ctx.req.url])
+
+			const data = _map[_url]
+				? Mock.mock(_map[_url])
 				: ''
 
 			setTimeout(() => {

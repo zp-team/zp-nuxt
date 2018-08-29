@@ -4,12 +4,19 @@
       <button @click.prevent="showLogin()">登录</button>
       {{'125454878787'|moment('YYYY-MM-DD')}}
       {{'125454878787'|cutstr(5)}}
-
+      <span class="iconfont icon-living"></span>
+      <el-button type="primary"><i class="iconfont icon-living "></i> 搜索</el-button>
 	</section>
 </template>
 
 <script>
   export default {
+    async asyncData({ $axios }) {
+console.log($axios.$apis)
+      await $axios.$apis.getOrders('123').then(({data})=>{
+        console.log(data)
+      })
+    },
     data() {
       return {
         

@@ -31,6 +31,8 @@
 </template>
 
 <script>
+
+
 export default {
   name: 'login-dialog',
   data() {
@@ -55,6 +57,20 @@ export default {
   computed: {
     showDialog: function() {
       return this.$store.state.user.dialogState
+    }
+  },
+  mounted(){
+
+  },
+  methods: {
+    resetFields(formName) {
+      this.$refs[formName].resetFields()
+    },
+    login(formName) {
+      this.loading =  true
+      this.$axios.$apis.getOrders('123').then(({data})=>{
+        console.log(data)
+      })
     }
   }
 }

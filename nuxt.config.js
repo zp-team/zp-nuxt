@@ -46,7 +46,7 @@ module.exports = {
 		['@nuxtjs/axios', '@nuxtjs/proxy']
 	],
 	proxy: {
-		'/api': {
+		'/mock': {
 			target: address.SERVER_ADDRESS,
 			ws: false
 		},
@@ -66,12 +66,12 @@ module.exports = {
 	plugins: [
 		'~plugins/element-ui',
 		'~/plugins/axios',
+		'~/server/api',
 		'~plugins/filter/',
 		'~plugins/directive/'
 	],
 	axios: {
 		retry: { retries: 3 },
-		browserBaseURL: '',
 		proxy: true,
 		headers: {
 			post: {'Content-Type': 'application/json'} // 设置请求头
