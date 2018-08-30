@@ -13,10 +13,11 @@
 export default (ctx) => {
 	const prefix = '/mock'
 	const apis = {
-		getOrders: function (params) {
-			console.log(params)
-			return 	ctx.$axios.get(`${prefix}/user/userInfo`)
+		// 登录
+		login: function (params) {
+			return 	ctx.$axios.post(`${prefix}/user/login`, params)
 		}
+
 	}
 
 	ctx.$axios.$apis = apis

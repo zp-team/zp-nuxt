@@ -27,9 +27,6 @@ const user = {
 		 */
 		async nuxtServerInit ({ commit }, { app }) {
 			// todo...
-			this.$axios.$apis.getOrders('123').then(({data}) => {
-				console.log(data)
-			})
 		},
 
 		/**

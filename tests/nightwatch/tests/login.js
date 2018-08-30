@@ -1,7 +1,7 @@
 // 账户信息
 const accountConfig = {
-  username: '15268177065',
-  password: 'z12345678'
+	username: '15268177065',
+	password: 'z12345678'
 }
 
 module.exports = {
@@ -20,7 +20,7 @@ module.exports = {
 		client.setValue('input[type="text"]', accountConfig.username)
 		client.setValue('input[type="password"]', accountConfig.password)
 		client.click('.login-btn')
-		
+
 		// 等待页面是否加载完成
 		client.frameParent()
 		client.expect.element('body').to.be.present.before(3000)
@@ -42,15 +42,14 @@ module.exports = {
 		client.click('.nav>li>a')
 		client.pause(1000)
   	client.window_handles(function (result) {
-     var handle = result.value[1]
-     client.switchWindow(handle)
+			var handle = result.value[1]
+			client.switchWindow(handle)
  		})
 
   	client.pause(1000)
 		client.setValue('input[name="username"]', accountConfig.username)
 		client.setValue('input[name="password"]', accountConfig.password)
   	client.click('#loginBtn')
-
 
   	// 校验登录右侧信息
   	client.pause(1000)
@@ -61,7 +60,7 @@ module.exports = {
   	})
 
   	client.pause(2000)
-  	
+
   	client.closeWindow()
 
   	client.window_handles(function (result) {
@@ -70,11 +69,11 @@ module.exports = {
   	})
 
   	client.expect.element('body').to.be.present.before(3000)
-  	client.click(".tab-title:first-of-type")
+  	client.click('.tab-title:first-of-type')
   	client.pause(1000)
-  	client.click(".tab-title:nth-of-type(2)")
+  	client.click('.tab-title:nth-of-type(2)')
   	client.pause(1000)
-  	client.click(".new-lists>ul>li:first-of-type>a")
+  	client.click('.new-lists>ul>li:first-of-type>a')
   	client.window_handles(function (result) {
   		var handle = result.value[2]
   		client.switchWindow(handle)
@@ -97,7 +96,7 @@ module.exports = {
 
 	  // 退出登录.
 	  client.click('.actions>a.exit')
-	  client.pause(2000)	
+	  client.pause(2000)
 
 		client.end()
 	}

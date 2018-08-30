@@ -12,10 +12,7 @@
 <script>
   export default {
     async asyncData({ $axios }) {
-console.log($axios.$apis)
-      await $axios.$apis.getOrders('123').then(({data})=>{
-        console.log(data)
-      })
+
     },
     data() {
       return {

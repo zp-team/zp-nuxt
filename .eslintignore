@@ -1,7 +1,7 @@
 build/*.js
 nuxt/*.js
 config/*.js
-e2e
+tests
 plugins/qrcode.js
 node_modules
 pages/guide

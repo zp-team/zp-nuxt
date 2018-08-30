@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites errors="7"
+            failures="1"
+            tests="1">
+
+  <testsuite name="login"
+    errors="7" failures="1" hostname="" id="" package="login" skipped="0"
+    tests="1" time="32.55" timestamp="Thu, 30 Aug 2018 08:24:12 GMT">
+  
+    <testcase name="Jumoresp Login Test" classname="login" time="32.55" assertions="9">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+      <failure message="Expected element &lt;i.user-name&gt; to be visible - element was not found">    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:92:18)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)</failure>
+
+    
+    </testcase>
+  
+
+  
+    <system-err>
+      ERROR: Unable to locate element: &quot;input[name=&quot;username&quot;]&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:50:10)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;input[name=&quot;password&quot;]&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:51:10)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;#loginBtn&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:52:11)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;.decoration-shop&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:56:11)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;.tab-title:first-of-type&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:72:11)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;.tab-title:nth-of-type(2)&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:74:11)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+ERROR: Unable to locate element: &quot;.new-lists&gt;ul&gt;li:first-of-type&gt;a&quot; using: css selector
+    at Object.Jumoresp Login Test (C:\jumao\gzjj\nuxt-seed\tests\nightwatch\tests\login.js:76:11)
+    at Module.call (C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\module.js:62:34)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\nightwatch\lib\runner\testcase.js:70:29
+    at _fulfilled (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:834:54)
+    at self.promiseDispatch.done (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:863:30)
+    at Promise.promise.promiseDispatch (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:796:13)
+    at C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:556:49
+    at runSingle (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:137:13)
+    at flush (C:\jumao\gzjj\nuxt-seed\node_modules\q\q.js:125:13)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    </system-err>
+  
+
+  
+  </testsuite>
+</testsuites>

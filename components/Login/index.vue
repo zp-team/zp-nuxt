@@ -1,25 +1,20 @@
 <template>
   <section @keyup.enter="login('form')">
     <el-dialog title="登录" custom-class="dialog-login" :visible.sync="showDialog" @close="resetFields('form')">
-      <div class="error-msg row" v-if="errorMsg"> 对不起，您的账号未激活！ </div>
-
+      <div class="error-msg row" v-if="errorMsg"></div>
       <el-form :model="form" ref="form" :rules="rules">
         <el-form-item prop="username">
-          <el-input v-model="form.username" auto-complete="off" prefix-icon="el-icon-search" :autofocus="true" placeholder="请输入手机号/邮箱"></el-input>
+          <el-input v-model="form.username" auto-complete="off" prefix-icon="iconfont icon-people" :autofocus="true" placeholder="请输入手机号/邮箱"></el-input>
         </el-form-item>
-
         <el-form-item prop="password">
-          <el-input type="password" v-model="form.password"  auto-complete="off" prefix-icon="el-icon-search" placeholder="请输入密码"></el-input>
+          <el-input type="password" v-model="form.password"  auto-complete="off" prefix-icon="iconfont icon-lock" placeholder="请输入密码"></el-input>
         </el-form-item>
-
-        <div class="jm-modal-pwd-operate clearfix">
+        <div class="operate-pwd clearfix">
           <el-checkbox v-model="form.rememberMe">下次自动登录</el-checkbox>
-          <a class="jm-modal-login-forget" :href="`XXX`" target="_blank">忘记密码</a>
+          <a class="pull-right" :href="`XXX`" target="_blank">忘记密码</a>
         </div>
-
         <el-button :disabled="loading" :loading="loading" class="login-btn" type="primary" @click="login('form')">登 录</el-button>
       </el-form>
-
       <div class="dialog-footer">
         <div class="login-register">
           <span class="color-font-6">没有账号？</span>
@@ -32,19 +27,18 @@
 
 <script>
 
-
 export default {
   name: 'login-dialog',
   data() {
     return {
-      loading: false,
-      errorMsg: '11',
-      form: {
+      loading: false, // 防重复提交
+      errorMsg: '11',   // 错误信息
+      form: {         // 表单内容
           username: '',
           password: '',
           rememberMe: false
       },
-      rules: {                                        
+      rules: {        // 验证规则                                
         username: [
           {required: true, message: '请输入手机号/邮箱', trigger: 'blur'}
         ],
@@ -55,27 +49,45 @@ export default {
     }
   },
   computed: {
-    showDialog: function() {
-      return this.$store.state.user.dialogState
+    showDialog: {
+      get() {
+        return this.$store.state.user.dialogState
+      },
+      set (newVal) {
+        this.$store.state.user.dialogState = newVal
+      }
     }
-  },
-  mounted(){
-
   },
   methods: {
     resetFields(formName) {
       this.$refs[formName].resetFields()
     },
     login(formName) {
-      this.loading =  true
-      this.$axios.$apis.getOrders('123').then(({data})=>{
-        console.log(data)
+      this.$refs[formName].validate((valid) => {
+        if (valid) {
+          this.loading =  true
+          this.$axios.$apis.login(
+            this.form
+          ).then((data) => {
+            let _self = this
+            this.$message({
+              message: '登录成功',
+              type: 'success',
+              duration: 1000,
+              onClose: function(){
+                _self.loading = false
+                _self.$store.commit('SET_DIALOGSTATUS', false)
+              }
+            })
+          })
+        }
       })
     }
   }
 }
 </script>
 
-<style scoped>
-  @import './index.scss';
+<style lang="scss" type="text/scss">
+  @import "~assets/scss/element-variables";
+  @import './index';
 </style>

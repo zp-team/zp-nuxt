@@ -72,10 +72,7 @@ module.exports = {
 	],
 	axios: {
 		retry: { retries: 3 },
-		proxy: true,
-		headers: {
-			post: {'Content-Type': 'application/json'} // 设置请求头
-		}
+		proxy: true
 	},
 	build: {
 		filenames: {

@@ -17,10 +17,10 @@
     "mock": "supervisor -w mocks ./mocks/server.js",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .eslintignore .",
-    "chrome": "node ./e2e/startup.js --chrome",
-    "phantomjs": "node ./e2e/startup.js --phantomjs",
-    "e2e:install": "node ./e2e/selenium-setup.js",
-    "e2e:start": "node ./e2e/selenium-start.js"
+    "chrome": "node ./tests/nightwatch/startup.js --chrome",
+    "phantomjs": "node ./tests/nightwatch/startup.js --phantomjs",
+    "nw:install": "node ./tests/nightwatch/selenium-setup.js",
+    "nw:start": "node ./tests/nightwatch/selenium-start.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",

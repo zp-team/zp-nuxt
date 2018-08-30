@@ -12,9 +12,9 @@ app.use(async (ctx, next) => {
 		'Access-Control-Allow-Headers': '*',
 		'Access-Control-Allow-Credentials': true
 	})
-
+	console.log(ctx.res)
 	return new Promise((resolve, reject) => {
-		ctx.req.addListener('data', resolve)
+		ctx.req.addListener('data', dataBuffer => dataBuffer)
 		ctx.req.addListener('end', () => {
 			const _url = ctx.req.url.indexOf('?') > 0 ? ctx.req.url.split('?')[0] : ctx.req.url
 			console.log('url=>', ctx.req.url)
@@ -24,7 +24,6 @@ app.use(async (ctx, next) => {
 				: ''
 
 			setTimeout(() => {
-				console.log(data)
 				ctx.res.end(JSON.stringify(data))
 			}, parseInt(((Math.random() - 0.5) + 1) * 500), 10) // 0-2s的随机数
 		})

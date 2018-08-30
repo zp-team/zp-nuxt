@@ -38,15 +38,15 @@ export default ({ $axios, redirect, app, store }) => {
 
 		// 解决GET请求缓存
 		if (config.method === 'get') {
+			config.headers['Content-Type'] = 'application/x-www-form-urlencoded; charset=UTF-8'
 			config.params = Object.assign({t: +new Date()}, config.params)
 		}
 	})
 
 	// 请求返回
 	$axios.onResponse((response) => {
-		// code为非0是抛错 可结合自己业务进行修改
+		// status为非0是抛错 可结合自己业务进行修改
 		const res = response.data
-
 		if (process.server) {
 			// 服务端渲染就输出日志
 			console.log(`\x1B[32m=====================> 响应开始 url:%s================\x1B[39m`, response.config.url)

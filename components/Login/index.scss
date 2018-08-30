@@ -1,31 +1,58 @@
 .dialog-login {
-  width: 360px;
-}
-.el-form {
-  padding: 0 20px;
-}  
-.title {
-  margin-bottom: 30px;
-  font-size: 26px;
-  color: #3e3e3e;
-}
-.error-msg {
-  margin: -10px 0 10px 0;
-  padding: 0 40px;
-  color: #d32f2f
-}
-.dialog-footer {
-  .login-register {
-    height: 55px;
-    line-height: 52px;
-    text-align: center;
-    border-top: 1px solid #e5e5e5;
-    margin-top: 30px;
-  }
+  width: 400px;
+
   a {
-    color: #2789e9;
+    color: $--color-text-regular;
+    &:hover {
+      color: $--color-primary;
+    }
+  }
+  .el-form {
+    padding: 0 20px;
+  }  
+  .title {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: $--color-text-primary;
+  }
+  .error-msg {
+    margin: -20px 0 10px 0;
+    padding: 0 20px;
+    color: $--color-danger
+  }
+  .operate-pwd {
+    margin-bottom: 10px
+  }
+  .dialog-footer {
+    .login-register {
+      height: 30px;
+      padding-top: 15px;
+      text-align: center;
+      border-top: 1px solid #e5e5e5;
+      margin-top: 20px;
+    }
+    a {
+      color: $--color-primary;
+    }
+  }
+  .el-button {
+    width: 100%;
+  }  
+}
+.bounce-enter-active {
+  animation: bounce-in .5s;
+}
+.bounce-leave-active {
+  animation: bounce-in .5s reverse;
+}
+@keyframes bounce-in {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.5);
+  }
+  100% {
+    transform: scale(1);
   }
 }
-.el-button {
-  width: 100%;
-}  

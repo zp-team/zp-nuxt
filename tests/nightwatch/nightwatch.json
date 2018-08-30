@@ -1,6 +1,6 @@
 {
   "default_browser": "phantomjs",
-  "src_folders" : ["e2e/tests"],
+  "src_folders" : ["tests/nightwatch/tests"],
   "output_folder" : "reports",
   "custom_commands_path" : "",
   "custom_assertions_path" : "",

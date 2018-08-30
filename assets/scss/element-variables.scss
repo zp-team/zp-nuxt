@@ -13,7 +13,7 @@ $--color-white: #fff;
 $--color-black: #000;
 
 // Primary Color
-$--color-primary: #7bba00 !default; 
+$--color-primary: #4484CE !default; 
 $--color-primary-light-1: mix($--color-white, $--color-primary, 10%); // 53a8ff 
 $--color-primary-light-2: mix($--color-white, $--color-primary, 20%); // 66b1ff 
 $--color-primary-light-3: mix($--color-white, $--color-primary, 30%); // 79bbff
@@ -24,7 +24,7 @@ $--color-primary-light-7: mix($--color-white, $--color-primary, 70%); // c6e2ff
 $--color-primary-light-8: mix($--color-white, $--color-primary, 80%); // d9ecff
 $--color-primary-light-9: mix($--color-white, $--color-primary, 90%); // ecf5ff
 
-$--color-success: #67c23a !default;
+$--color-success: #4484CE !default;
 $--color-warning: #eb9e05 !default;
 $--color-danger: #fa5555 !default;
 $--color-info: #878d99 !default;

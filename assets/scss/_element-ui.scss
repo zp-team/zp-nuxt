@@ -49,3 +49,15 @@
     color: $--color-primary;
   }
 }
+
+.el-input__icon {
+  display: inline-block
+}
+
+.el-dialog__headerbtn {
+  transition: transform 0.25s ease;
+  &:hover {
+    color: $--color-primary;
+    transform: scale(1.5, 1.5);
+  }
+}
