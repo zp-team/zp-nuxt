@@ -9,8 +9,8 @@ const process = require('process')
 const path = require('path')
 const phantomjs = require('phantomjs-prebuilt')
 
-const baseConfig = require('./tests/nightwatch/nightwatch.json')
-const seleniumConfig = require('./tests/nightwatch/selenium') // 启动selenium配置
+const baseConfig = require('./tests/e2e/nightwatch.json')
+const seleniumConfig = require('./tests/e2e/selenium') // 启动selenium配置
 
 const rootPath = path.resolve(__dirname)
 const driverPath = `${rootPath}/node_modules/selenium-standalone/.selenium`

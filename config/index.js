@@ -22,7 +22,7 @@ const NODE_ENV = {
 		// CDN 服务器
 		CDN_ADDRESS: '/_nuxt/',
 		// API 服务器
-		SERVER_ADDRESS: 'http://api.XXX.test',
+		SERVER_ADDRESS: 'http://127.0.0.1:3333', 
 		// 认证中心
 		USERCENTER_ADDRESS: 'https://passport.XXX.test',
 		// 中台地址

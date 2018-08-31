@@ -17,10 +17,11 @@
     "mock": "supervisor -w mocks ./mocks/server.js",
     "lint": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "lint:fix": "eslint --fix --ext .js,.vue --ignore-path .eslintignore .",
-    "chrome": "node ./tests/nightwatch/startup.js --chrome",
-    "phantomjs": "node ./tests/nightwatch/startup.js --phantomjs",
-    "nw:install": "node ./tests/nightwatch/selenium-setup.js",
-    "nw:start": "node ./tests/nightwatch/selenium-start.js"
+    "test": "mocha-webpack --webpack-config tests/unit/webpack.config.js --require tests/unit/setup.js tests/unit/spec/**/*.spec.js",
+    "chrome": "node ./tests/e2e/startup.js --chrome",
+    "phantomjs": "node ./tests/e2e/startup.js --phantomjs",
+    "e2e:install": "node ./tests/e2e/selenium-setup.js",
+    "e2e:start": "node ./tests/e2e/selenium-start.js"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.3.1",
@@ -43,6 +44,7 @@
   },
   "devDependencies": {
     "@nuxtjs/proxy": "^1.1.1",
+    "@vue/test-utils": "^1.0.0-beta.15",
     "babel-eslint": "^7.2.3",
     "babel-plugin-component": "^0.10.0",
     "backpack-core": "^0.4.1",
@@ -57,11 +59,18 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "eslint-plugin-vue": "^4.7.1",
+    "expect": "^21.2.1",
+    "jsdom": "^11.10.0",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.1.1",
+    "mocha-webpack": "^1.1.0",
     "mockjs": "^1.0.1-beta3",
     "nightwatch": "0.9.16",
     "node-sass": "^4.5.3",
+    "power-assert": "^1.5.0",
     "sass-loader": "^6.0.6",
     "selenium-standalone": "6.5.0",
+    "supervisor": "^0.12.0",
     "v-viewer": "^0.2.1"
   }
 }

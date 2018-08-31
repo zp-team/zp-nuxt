@@ -59,7 +59,7 @@ module.exports = {
 	/*
    ** Global CSS '~/node_modules/element-ui/lib/theme-default/index.css',
    */
-	css: ['~/assets/scss/index.scss'],
+	css: ['~/assets/scss/index.scss', '~/assets/font/iconfont.css'],
 	/*
    ** Add axios globally
    */
