@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       loading: false, // 防重复提交
-      errorMsg: '11',   // 错误信息
+      errorMsg: '',   // 错误信息
       form: {         // 表单内容
           username: '',
           password: '',
@@ -79,6 +79,8 @@ export default {
                 _self.$store.commit('SET_DIALOGSTATUS', false)
               }
             })
+          }).catch(err => {
+            this.loading = false
           })
         }
       })

@@ -14,7 +14,7 @@ const NODE_ENV = {
 		// 中台地址
 		CENTER_ADDRESS: 'https://ecenter.XXX.test',
 		// 图片服务器
-		IMG_ADDRESS: 'https://img.XXX.pre',
+		IMG_ADDRESS: 'http://img.zcool.cn',
 		// 图片上传服务器
 		UPLOAD_ADDRESS: 'http://image5.XXX.com'
 	},
@@ -30,7 +30,7 @@ const NODE_ENV = {
 		// 上传地址
 		UPLOAD_ADDRESS: 'http://image5.XXX.com',
 		// 图片服务器
-		IMG_ADDRESS: 'https://image.XXX.test'
+		IMG_ADDRESS: 'http://img.zcool.cn'
 	},
 	pre: {
 		// CDN 服务器
