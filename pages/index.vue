@@ -19,7 +19,7 @@
       </el-col>
     </el-row>
     <el-row>
- 
+      <Toolbar class="tool-bar"></Toolbar>
     </el-row>
 
     <el-row>
@@ -51,6 +51,8 @@
 </template>
 
 <script>
+  import Toolbar from '~/components/Toolbar/index.vue'
+
   export default {
     async asyncData({ $axios }) {
 
@@ -65,6 +67,9 @@
         this.$store.commit('SET_DIALOGSTATUS', true)
         
       }
+    },
+    components: {
+      Toolbar
     }
   }
 </script>

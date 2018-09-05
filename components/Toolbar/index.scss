@@ -1,0 +1,73 @@
+.tool-bar {
+  float: right;
+  background-color: #fff;
+  z-index: 20;
+  li {
+    border: 1px solid #dedede;
+    width: 63px;
+    height: 63px;
+    color: #6e6e6e;
+    cursor: default;
+    position: relative;
+
+    &:hover {
+      background-color: $--color-primary;
+      color: #fff;
+
+      .pop {
+        display: block;
+        transition: transform .6s;
+        transform: translateX(0);
+        visibility: visible;
+      }
+
+    }
+  }
+
+  li + li {
+    border-top: none;
+  }
+
+  .code {
+    padding: 10px;
+    border: 1px solid #dedede;
+    background-color: #fff;
+    position: absolute;
+    right: 61px;
+    top: -1px;
+    height: 106px;
+    visibility: hidden;
+    transform: translateX(-20px);
+
+    img {
+      width: 86px;
+      height: 86px;
+    }
+  }
+
+  .concat {
+    padding: 11px 16px;
+    background-color: $--color-primary;
+    color: #fff;
+    width: 128px;
+    visibility: hidden;
+    position: absolute;
+    right: 62px;
+    top: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.trige {
+  position: relative;
+  text-align: center;
+  display: block;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 12px;
+
+  .text {
+    margin: 0;
+    padding-top: 4px;
+  }
+}
