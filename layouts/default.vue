@@ -2,7 +2,6 @@
   <div>
     <nuxt/>
     <Login/>
-    <!-- <Toolbar/> -->
   </div>
 </template>
 

@@ -33,11 +33,9 @@
 </template>
 
 <script>
-  import platform from '~/config/platform'
   export default {
     data () {
       return {
-        platform: platform,
         scrollTag: false,
         timer: null,
         scroll: '',
@@ -79,6 +77,6 @@
 </script>
 
 <style lang="scss" type="text/scss" scoped>
-  @import "~assets/scss/element-variables";
+  @import "../../assets/scss/element-variables";
   @import './index';
 </style>

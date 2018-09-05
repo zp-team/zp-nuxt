@@ -1,10 +1,11 @@
 import { shallowMount } from '@vue/test-utils'
-import Counter from '~/components/Counter.vue'
+import Toolbar from '~/components/Toolbar/index.vue'
 
-describe('Counter.vue', () => {
-  it('计数器在点击按钮时自增', () => {
-    const wrapper = shallowMount(Counter)
-    wrapper.find('button').trigger('click')
-    expect(wrapper.find('div').text()).toMatch('1')
+describe('Toolbar', () => {
+  it('右边浮动测试', () => {
+    const wrapper = shallowMount(Toolbar)
+    wrapper.find('.backTop').trigger('click')
+    expect(document.body.scrollTop).toBe(0)
+    expect(wrapper.vm.scrollTag).toBe(false)
   })
 })
